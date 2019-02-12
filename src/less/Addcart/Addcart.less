@@ -29,7 +29,7 @@
                    
                 }
                 .cart-pirce{
-                    color: red;
+                    color: 0;
                     font-size: .426667rem;
                 }
             }
@@ -51,6 +51,10 @@
 
 
     .card-content{
+       height: 10.666667rem;
+       overflow-y: auto;
+       &::-webkit-scrollbar { width: 0 !important }
+       
         .title{
             margin-top: .266667rem;
         }
@@ -58,22 +62,51 @@
             margin-top: .266667rem;
             display: flex;
             flex-wrap: wrap;
+            position: fixed;
+            height: 10.666667rem;
+            overflow-y:auto;
             .img{
-              
-               
                 // background-color: #f0f0f0;
                 // border-radius: .2rem;
                 // border: 1px solid #f0f0f0;
                 // color: #474747;
                 text-align: center;
                 margin-right: .213333rem;
-                img{
-                    width: 2.133333rem;
-                    height: 2.133333rem;
-                    border-radius: .266667rem;
+                bottom: 0;
+                left: 0;
+                .hezi{
+                   position: relative;
+                    &>img{
+                        width: 2.133333rem;
+                        height: 2.133333rem;
+                        border-radius: .266667rem;
+                    }
                 }
                 
-            }
+                
+                }
+                .checkedIcon{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width:.8rem;
+                    height: .8rem;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transform: translate(-50%,-50%);
+                    i{
+                        color: white;
+                    }
+                }
+                
+            
+            
+
+           
+           
             .text{
            
                 p{
@@ -103,7 +136,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-       
+    
         .card-bottom-wrap{
             .card-size{
                 padding: 0.533333rem;
@@ -142,4 +175,124 @@
             }
         }
     }
+
+
+}
+.AddcartQty{
+    
+    .mask{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 998;
+        width: 100%;
+        height: 100%;
+    }
+    .card-dialog{
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+      
+      
+         
+            .card-dialog-title{
+                text-align: center;
+                position: relative;
+                height: 1.28rem;
+                line-height: 1.28rem;
+                i{
+                    position: absolute;
+                    right: .266667rem;
+                    top: 0;
+                    font-size: .64rem;
+                }
+            }
+            .card-content{
+                ul{
+                    li{
+                        margin-bottom: .533333rem;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: .266667rem;
+                        border-bottom: 1px solid rgb(209, 209, 209);
+                        p{
+                            margin-bottom: 0;
+                        }
+                        .left{
+                            display: flex;
+                            img{
+                                width: 1.413333rem;
+                                height: 1.413333rem;
+                            }
+                            .info{
+                                margin-left: .266667rem;
+                                .guige{
+                                    .price{
+                                        color: red;
+
+                                    }
+                                    .kuncun{
+                                        margin-left: .266667rem;
+                                    }
+                                   
+                                }
+                                .other{
+                                    color: #934d91;
+                                }
+                            }
+                        }
+
+                        .right{
+                            button{
+                                width: .746667rem;
+                                height: .746667rem;
+                                border-radius: 50%;
+                                background-color: #f0f0f0;
+                            }
+                            span{
+                                margin: 0 .266667rem;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+                .goods_num{
+                    text-align: right;
+                    span{
+                        color: red;
+                        margin-left: .266667rem;
+                    }
+                    em{
+                        font-style: normal;
+                        color: red;
+
+                    }
+                }
+                .commit{
+                    margin-top: .266667rem;
+
+                    
+                    background-color: #934d91;
+                    color: white;
+                    width: 100%;
+                    height: 1.333333rem;
+                    line-height: 1.333333rem;
+                    font-size: .48rem;
+                }
+            }
+           
+        
+    }
+    
+}
+
+button{
+
+    outline:none;
+    
 }
