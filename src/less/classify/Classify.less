@@ -1,0 +1,71 @@
+// --------------   分类样式
+.Classify{
+   
+    .content{
+        display: flex;
+        .LeftMenu{
+          
+            background: white;
+           ul{
+            background: white;
+            height: 100%;
+            width: 2.8rem;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+           
+         
+           }
+            li{
+                a{
+                    display: block;
+                    height: 1.28rem;
+                    text-align: center;
+                    line-height: 1.28rem;
+                    font-size: .38rem;
+                    border-bottom: 1px solid #EBECEF;
+                    &.active{
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .RightContent{
+            flex:1;
+            &>ul{
+                
+                &>li{
+                    p{
+                        width: 100%;
+                        padding-left: .266667rem;
+                        font-size:.38rem;
+                        padding-bottom: .166667rem;
+                        line-height: .8rem;
+                        border-bottom: 1px solid rgb(138, 138, 138);
+                    }
+                    &>ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            color: rgb(138, 138, 138);
+                            width: 33%;
+                            line-height: .8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: .426667rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+

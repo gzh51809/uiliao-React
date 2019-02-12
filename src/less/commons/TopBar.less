@@ -1,0 +1,48 @@
+.TopBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
+    .contxt{
+        display: flex;
+        height: 1.226667rem;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size:.32rem;
+        .classify{
+            width: 1.226667rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .icon-iconfontjiantou4{
+                transform: rotate(180deg)
+            }
+        }
+        input{
+            width: 6.4rem;
+            background: #81838B;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            height: .933333rem;
+            padding-left: .266667rem;
+            font-size: .4rem;
+            &::-webkit-input-placeholder{
+                color: black;
+            }
+        }
+        .shoping,.my{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left:.266667rem;
+        }
+        
+    }
+}
+body{
+    padding-top: 1.226667rem;
+}

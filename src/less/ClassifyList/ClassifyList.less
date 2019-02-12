@@ -1,0 +1,65 @@
+.ClassifyList{
+    .TopBar{
+        .contxt{
+            .classify{
+                position: absolute;
+                left: 0;
+                top: .373333rem;
+            }  
+            &>h3{
+                text-align: center !important;
+                width: 100% !important;
+                color: white !important;
+      
+            }
+        }
+     
+    }
+
+    .GoodsList{
+        padding-top: .533333rem;
+        overflow: scroll;
+        height: 21.333333rem;
+        &:-webkit-scrollbar { width: 0 !important };
+        & { overflow: -moz-scrollbars-none; };
+        &>ul{
+            display: flex;
+            flex-wrap: wrap;
+           
+            li{
+               width: 4.533333rem;
+               margin-right: .266667rem;
+               font-size: .386667rem;
+               background-color: white;
+               margin-bottom: .4rem;
+               padding-bottom: .213333rem;
+               img{
+                   width: 4.533333rem;
+               }
+               .titel{
+                
+                width: 4.533333rem;
+                height: 1.033333rem;
+                padding: 0 .16rem;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+
+               }
+               .price{
+                   margin-top: .213333rem;
+                   color: red;
+                   padding: 0 .16rem;
+               }
+               .unit{
+                   color: black;
+               }
+            }
+            &>li:nth-of-type(2n){
+                margin-right: 0;
+            }
+        }
+    }
+}

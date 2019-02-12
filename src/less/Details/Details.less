@@ -1,0 +1,203 @@
+.Details{
+ .TopBar{
+     .classify{
+         width: 1.266667rem;
+         position: absolute;
+     }
+     h3{
+        width: 4.266667rem;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: white;
+     }
+     .icon-xiazai1{
+         position: absolute;
+         right: 0;
+         width: 1.266667rem;
+         text-align: center;
+         font-size: .533333rem;
+
+     }
+    
+ }   
+
+ .ant-tabs-bar{
+     background-color: white;
+     margin-bottom: 0;
+ }
+ .ant-tabs-nav div{
+    display: flex;
+    width: 10rem;
+    
+    .ant-tabs-tab{
+        width: 25%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .ant-tabs-tab-active {
+        color: black;
+        border-bottom: 1px solid black;
+    }
+    }
+    .ant-tabs-ink-bar {
+        background-color:black;
+    }
+
+
+    // 宝贝
+    .Product{
+        .Banner{
+            img{
+                height: 10rem;
+            }
+            .swiper-container{
+                height: 10rem;
+            }
+            position: relative;
+            .swiper-pagination{
+           
+                bottom: .533333rem;
+                left:8.8rem;
+                width: .8rem;
+                height: .8rem;
+                line-height: .8rem;
+                background-color: black;
+                opacity: 0.5;
+              
+                color: white;
+                border-radius: .213333rem;
+                .swiper-pagination-current,.swiper-pagination-total{
+                    
+                    background-color: transparent;
+                }
+
+            }
+        }
+
+
+        .Info{
+           
+            .InfoTitle{
+                background-color: white;
+                padding-top:.213333rem;
+                padding-bottom:.213333rem;
+                p{
+                    margin: 0;
+                }
+               .name{
+                   font-size: .373333rem;
+                   line-height: .546667rem;
+
+               }
+               .price{
+                   font-size:.533333rem;
+                   color: red;
+                   span{
+                       font-size:.373333rem;
+                       text-decoration: line-through;
+                       color: #333333;
+                   }
+               }
+
+            }
+
+            .parameter{
+                background-color: white;
+                margin-top: .266667rem;
+                padding:.266667rem 0;
+                .item{
+                    .left{
+                        margin-right: .233333rem;
+                    }
+                    i{
+                        float:right;
+                    }
+                }
+            }
+
+            .maijia{
+                padding:.266667rem 0;
+            }
+        }
+
+        .Comment{
+            background-color: white;
+            padding: .266667rem 0;
+            .con{
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+
+        // 购物车
+        .Cart{
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #e2e2e2;
+            background-color: #fff;
+            height: 1.333333rem;
+            align-items: center;
+            .icon{
+                width: 1.6rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            button{
+                flex: 1;
+                font-size: .426667rem;
+                height: 1.333333rem;
+            }
+            .Car{
+                background-color: #f4c43b;
+                color: #474747;
+           
+            }
+            .go{
+                color: #fff;
+                background-color: #934d91;
+            }
+        }
+    }
+
+
+    // 表格
+    .Parameter{
+        display: flex;
+        justify-content: center;
+        margin-top: .533333rem;
+        table{
+            border: 1px solid #ccc;
+           td{
+               width: 6.333333rem;
+               background-color: white;
+               padding-left: .266667rem;
+           }
+           .color{
+               width: 2.133333rem;
+               background-color: #f0f0f0;
+               color: #8b8b8b;
+           }
+        }
+    }
+
+    .Img{
+        display: flex;
+        justify-content: center;
+        margin-top: .533333rem;
+    }
+
+
+    // 添加购物车页面
+    
+}

@@ -1,0 +1,276 @@
+
+
+
+
+
+// ----------- 轮播图样式
+.swiper-container{
+    height: 4rem;
+    width: 100%;
+    img{
+        width: 100% !important;
+        height: 4rem;
+    }
+   .swiper-pagination{
+       span{
+        background: red;
+       }
+   }
+}
+
+// ----------- 轮播图样式 END
+
+// ----------- 根据款式找面料（通用标题）
+.bigTitle{
+ 
+    background-color: #ebecef;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    .con{
+        display: flex;
+        text-align: center;
+        padding: 0 1.6rem;
+        &>.line{
+            flex: 1;
+            background:linear-gradient(
+                to bottom,
+                rgba(0,0,0,0) 49%,
+                #81838B 49%,
+                #81838B 51%,
+                rgba(0,0,0,0) 51%
+                );
+        }
+        &>.text{
+            padding: 0 20px;
+            font-size: .4rem;
+            color: #81838B;
+            
+        }
+    }
+   
+}
+
+// ----------- 根据款式找面料（通用标题） END
+
+// ----------- 商品分类
+.Category{
+    background-color: white;
+    .con{
+        padding-top:.4rem;
+        padding-bottom: .4rem;
+        display:flex;
+        flex-wrap: wrap;
+       .Fabric{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        img{
+            width: 1.653333rem;
+            height: 1.733333rem;
+        }
+        p{
+           margin-left: .266667rem;
+            color: #4C4D52;
+            font-size: 0.4rem;
+        }
+       }
+    }
+}
+
+// ----------- 商品分类 END
+
+
+// ----------- 商品趋势 
+.Tendency{
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    .con{
+       width:39.146667rem;
+    
+       display: flex;
+        padding-top: .266667rem;
+        padding-bottom: .266667rem;
+        .item{
+            border: 1px solid #EBECEF;
+           width:9.173333rem !important;
+        
+           height: 8.68rem !important;
+            text-align: center;
+            height: 16rem;
+            margin-right: .533333rem;
+            .trend-discrip{
+                max-width: 100%;
+                display: inline-block;
+                width: auto;
+                border-bottom:1px solid #EBECEF;
+                font-size: .426667rem;
+                color: #333;
+                line-height: 1.4rem;
+                margin-top: 0.7rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .trend-title{
+                font-weight: bold;
+                font-size: .533333rem;
+                line-height: 1.066667rem;
+
+            }
+        }
+        img{
+            width: 8.906667rem;
+        }
+    }
+}
+
+// ----------- 商品趋势 END
+
+
+
+// ----------- 商品列表
+.Goods{
+    background-color: white;
+    
+            &>img{
+                width: 100%; 
+            }
+           
+            .wrapper{
+                width: 100%;
+                overflow: hidden;
+              
+            }
+           
+            .content{
+                
+               display: flex;
+               width:22.3rem;
+               padding-top: .266667rem;
+               padding-bottom: .266667rem;
+                .item{
+                 margin-right: .533333rem;
+                   
+                    // height: 8.68rem !important;
+                    // width: 3.733333rem !important;
+                    .Img{
+                        position: relative;
+                        img{
+                            width: 3.2rem;
+                        }
+                        i{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            border:none;
+                            background: url('../../img/fabric_mask@0.5x.png');
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-size: 4rem 4rem;
+                        }
+                    }
+                    
+                    .name{
+                        width: 3.333333rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: .38rem;
+                    }
+                    .price{
+                        color: red;
+                        font-size: .426667rem;
+                    }
+                }
+
+                .more{
+                    width: 3.386667rem;
+                    border: 1px solid #F0F2F4;
+                    height: 4.933333rem;
+                    font-size: .373333rem;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                   .MoreText{
+                       font-weight: bold;
+                      line-height: .586667rem;
+                      margin-bottom: .266667rem;
+                   }
+                   .MoerHtml{
+                       color: #ccc;
+                       line-height: .533333rem
+                   }
+
+                }
+            }
+        
+}
+
+// ----------- 商品列表 END
+
+// ----------- 人气商家
+.Popularity{
+    &>img{
+        width: 100%;
+    }
+    ul{
+        background-color: white;
+        li{
+            display: flex;
+            
+            height: 1.92rem;
+            align-items: center;
+            .storeIndex{
+                color: #EF7D00;
+                font-size: .693333rem;
+                width: 1.2rem;
+                text-align: center;
+            }
+            .hotStoreMsg{
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                align-items: center;
+                .left{
+                    h3{
+                        font-size: .5rem;
+                    }
+                    p{
+                        font-size: .373333rem;
+                    }
+                }
+                .right{
+                    font-size: .373333rem;
+                    margin-right: .533333rem;
+                }
+            }
+        }
+    }
+}
+
+// ----------- 人气商家 END
+
+
+.footer{
+    text-align: center;
+    font-size: .373333rem;
+    padding:.4rem 0;
+    p{
+        line-height: .746667rem;
+    }
+    .phone{
+        font-size: .64rem;
+    }
+    button{
+        height: 1.25rem;
+        line-height: 1.25rem;
+        background: #EBECEF;
+        border: 1px solid #CFD1D7;
+        width: 3.133333rem;
+        color: #81838B;
+        margin: .266667rem 0;
+    }
+}
